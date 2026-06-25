@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Terrarium Plants — Sway Animation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="terrarium">
+      <!-- Plant 1 -->
+      <figure
+        class="plant plant--1"
+        aria-hidden="false"
+        aria-label="Small leafy plant"
+      >
+        <svg
+          viewBox="0 0 120 160"
+          xmlns="http://www.w3.org/2000/svg"
+          role="img"
+        >
+          <!-- pot -->
+          <rect x="30" y="120" width="60" height="25" rx="4" fill="#9b6b4a" />
+          <!-- sway group (rotates around bottom center) -->
+          <g class="sway">
+            <!-- bob group (moves slightly up/down) -->
+            <g class="bob">
+              <!-- stem / leaves -->
+              <path
+                d="M60 120 C58 95, 48 80, 52 60 C60 40, 70 45, 74 60 C78 80, 70 95, 68 120"
+                fill="none"
+                stroke="#3b7a3b"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <ellipse cx="50" cy="70" rx="12" ry="6" fill="#5fb46a" />
+              <ellipse cx="73" cy="70" rx="12" ry="6" fill="#4aa85a" />
+            </g>
+          </g>
+        </svg>
+      </figure>
+
+      <!-- Plant 2 -->
+      <figure
+        class="plant plant--2"
+        aria-hidden="false"
+        aria-label="Tall spindly plant"
+      >
+        <svg
+          viewBox="0 0 120 160"
+          xmlns="http://www.w3.org/2000/svg"
+          role="img"
+        >
+          <rect x="30" y="120" width="60" height="25" rx="4" fill="#6f4b3e" />
+          <g class="sway">
+            <g class="bob">
+              <path
+                d="M60 120 C62 90, 66 70, 64 50 C62 34, 56 24, 52 38 C48 24, 42 34, 40 50 C38 70, 42 90, 46 120"
+                fill="none"
+                stroke="#2f6b2f"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M46 60 C40 52, 34 52, 28 60 C34 56, 40 64, 46 60"
+                fill="#6fcf81"
+              />
+              <path
+                d="M74 50 C78 44, 86 44, 92 50 C86 47, 78 54, 74 50"
+                fill="#55b968"
+              />
+            </g>
+          </g>
+        </svg>
+      </figure>
+
+      <!-- Plant 3 -->
+      <figure
+        class="plant plant--3"
+        aria-hidden="false"
+        aria-label="Short clustered plant"
+      >
+        <svg
+          viewBox="0 0 120 160"
+          xmlns="http://www.w3.org/2000/svg"
+          role="img"
+        >
+          <rect x="30" y="120" width="60" height="25" rx="4" fill="#7a4f3a" />
+          <g class="sway">
+            <g class="bob">
+              <path
+                d="M60 120 C60 100, 54 88, 48 76 C42 64, 36 60, 46 50 C56 40, 64 44, 72 50 C80 56, 76 64, 70 76 C64 88, 60 100, 60 120"
+                fill="#3aa05a"
+                stroke="#2c8b48"
+                stroke-width="1"
+              />
+              <circle cx="54" cy="58" r="8" fill="#7fe3a6" />
+              <circle cx="68" cy="62" r="6" fill="#6ad78c" />
+              <circle cx="62" cy="74" r="5" fill="#4fbf6d" />
+            </g>
+          </g>
+        </svg>
+      </figure>
+    </main>
+  </body>
+</html>

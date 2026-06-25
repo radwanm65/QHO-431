@@ -1,0 +1,78 @@
+/* ==========================
+   TAG SELECTORS
+   ========================== */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 20px;
+}
+
+h1 {
+  color: darkblue;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+}
+
+/* ==========================
+   ID SELECTOR
+   ========================== */
+
+#main-title {
+  background-color: lightblue;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* ==========================
+   CLASS SELECTORS
+   ========================== */
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin: 20px 0;
+  border: 2px solid #cccccc;
+  border-radius: 8px;
+}
+
+.highlight {
+  color: darkred;
+  font-weight: bold;
+}
+
+/* ==========================
+   NESTED SELECTORS
+   Selecting tags inside tags
+   ========================== */
+
+nav a {
+  text-decoration: none;
+  color: white;
+  background-color: steelblue;
+  padding: 10px 15px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.card p {
+  color: #444444;
+  line-height: 1.6;
+}
+
+/* ==========================
+   PSEUDO CLASSES
+   ========================== */
+
+nav a:hover {
+  background-color: darkorange;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
