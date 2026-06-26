@@ -4,8 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Selectors Demo</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
   </head>
+  <!-- Validate HTML
+   https://validator.w3.org/#validate_by_input
+   Validate CSS
+   https://jigsaw.w3.org/css-validator/validator
+   Browser Compatibility
+   https://caniuse.com/
+   Responsive Design Testing
+   https://www.responsinator.com/
+   Develop | Enter Responsive Mode | Toggle Device Toolbar | Ctrl + Shift + M
+
+   -->
   <body>
     <header>
       <h1 id="main-title">CSS Selectors Demonstration</h1>
@@ -14,11 +29,12 @@
     <nav>
       <a href="#">Home</a>
       <a href="#">About</a>
+      <a href="#">Blog</a>
       <a href="#">Contact</a>
     </nav>
 
     <section class="card">
-      <h2>Tag Selector Example</h2>
+      <h2>Tag Selector Example 1</h2>
       <p>
         This paragraph is inside a card and demonstrates selecting tags inside
         other tags.
@@ -26,12 +42,39 @@
     </section>
 
     <section class="card">
-      <h2>Class Selector Example</h2>
+      <h2>Class Selector Example 2</h2>
+      <p class="highlight">This paragraph uses a class called "highlight".</p>
+    </section>
+
+    <section class="card">
+      <h2>Class Selector Example 3</h2>
       <p class="highlight">This paragraph uses a class called "highlight".</p>
     </section>
 
     <footer>
-      <p>Web Development Practice Page</p>
+      <p>&copy; 2026 Web Development Practice Page</p>
+
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="https://twitter.com" target="_blank">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+
+        <a href="https://instagram.com" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="https://linkedin.com" target="_blank">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+
+        <a href="https://youtube.com" target="_blank">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+      </div>
     </footer>
   </body>
 </html>
