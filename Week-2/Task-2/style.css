@@ -1,35 +1,20 @@
-/* ==========================
-   TAG SELECTORS
-   ========================== */
-
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   margin: 20px;
 }
-
 h1 {
   color: darkblue;
   text-align: center;
 }
-
 p {
   font-size: 18px;
 }
-
-/* ==========================
-   ID SELECTOR
-   ========================== */
-
 #main-title {
   background-color: lightblue;
   padding: 15px;
   border-radius: 10px;
 }
-
-/* ==========================
-   CLASS SELECTORS
-   ========================== */
 
 .card {
   background-color: white;
@@ -38,17 +23,10 @@ p {
   border: 2px solid #cccccc;
   border-radius: 8px;
 }
-
 .highlight {
   color: darkred;
   font-weight: bold;
 }
-
-/* ==========================
-   NESTED SELECTORS
-   Selecting tags inside tags
-   ========================== */
-
 nav a {
   text-decoration: none;
   color: white;
@@ -57,16 +35,10 @@ nav a {
   margin-right: 10px;
   border-radius: 5px;
 }
-
 .card p {
   color: #444444;
   line-height: 1.6;
 }
-
-/* ==========================
-   PSEUDO CLASSES
-   ========================== */
-
 nav a:hover {
   background-color: darkorange;
 }
@@ -75,4 +47,72 @@ nav a:hover {
   transform: scale(1.02);
   transition: 0.3s;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+/* Footer text */
+footer p {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+/* Container for icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Links */
+.social-icons a {
+  color: white;
+  font-size: 28px;
+  text-decoration: none;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* Hover effect */
+.social-icons a:hover {
+  color: #00bfff;
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav a {
+    width: 90%;
+    text-align: center;
+    padding: 12px;
+    border-bottom: 1px solid #555;
+  }
+
+  nav a:last-child {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    padding: 10px;
+  }
+
+  nav a {
+    font-size: 16px;
+    padding: 10px;
+  }
 }
