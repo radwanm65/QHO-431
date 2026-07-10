@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>My Personal Blog</title>
+  </head>
+  <body onload="console.log('Welcome to my home page!')">
+    <!-- Main content area -->
+    <script>
+      // create a couple of elements in an otherwise empty HTML page
+      const heading = document.createElement("h1");
+      const headingText = document.createTextNode("Big Head!");
+      heading.appendChild(headingText);
+      document.body.appendChild(heading);
+    </script>
+    <header>
+      <h1>My Blog Title</h1>
+      <p>Living intentionally. One moment at a time.</p>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="http://www.google.com">About</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Blog posts go here -->
+
+    <!-- Sidebar content -->
+    <aside>
+      <!-- Additional information -->
+    </aside>
+
+    <!-- Site footer -->
+    <footer>
+      <!-- Footer content -->
+      <p>&copy; 2024 My Personal Blog. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

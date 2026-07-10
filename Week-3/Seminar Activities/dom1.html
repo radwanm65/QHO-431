@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Functions Demonstration</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>DOM Functions Demonstration</h1>
+
+      <section>
+        <h2>1. querySelector() & addEventListener()</h2>
+        <input type="text" id="username" placeholder="Enter your name" />
+        <button id="saveBtn">Save Name</button>
+        <button id="clearBtn">Clear Storage</button>
+      </section>
+      <section>
+        <h2>2. classList()</h2>
+        <button id="themeBtn">Toggle Dark Mode</button>
+      </section>
+
+      <section>
+        <h2>3. addEventListener()</h2>
+
+        <label>
+          Select Background Colour:
+          <select id="colourSelect">
+            <option value="">Choose...</option>
+            <option value="lightblue">Light Blue</option>
+            <option value="lightgreen">Light Green</option>
+            <option value="lightyellow">Light Yellow</option>
+          </select>
+        </label>
+      </section>
+
+      <section>
+        <h2>Output</h2>
+
+        <p id="output">Welcome!</p>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

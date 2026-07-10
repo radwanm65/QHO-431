@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced JavaScript APIs</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+
+  <body>
+    <h1>Advanced Browser APIs Demonstration</h1>
+
+    <hr />
+
+    <h2>1. Intersection Observer</h2>
+
+    <div class="spacer"></div>
+
+    <div id="observeBox">I become visible when scrolled into view.</div>
+
+    <p id="intersectionResult"></p>
+
+    <hr />
+
+    <h2>2. Mutation Observer</h2>
+
+    <div id="mutationBox">Original Text</div>
+
+    <button id="changeText">Change Text</button>
+
+    <p id="mutationResult"></p>
+
+    <hr />
+
+    <h2>3. Drag and Drop</h2>
+
+    <div id="dragItem" draggable="true">Drag Me</div>
+
+    <div id="dropZone">Drop Here</div>
+
+    <hr />
+
+    <h2>4. Geolocation</h2>
+
+    <button id="locationButton">Get My Location</button>
+
+    <p id="locationResult"></p>
+
+    <hr />
+
+    <h2>5. Web Component</h2>
+
+    <student-card></student-card>
+
+    <hr />
+
+    <h2>6. Canvas API</h2>
+
+    <canvas id="canvas" width="400" height="200"></canvas>
+
+    <hr />
+
+    <h2>7. Web Worker</h2>
+
+    <button id="workerButton">Start Heavy Calculation</button>
+
+    <p id="workerResult"></p>
+
+    <hr />
+
+    <h2>8. Service Worker</h2>
+
+    <p id="swStatus"></p>
+
+    <script src="script2.js"></script>
+  </body>
+</html>
