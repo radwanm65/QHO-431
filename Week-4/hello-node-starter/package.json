@@ -1,0 +1,14 @@
+{
+  "name": "hello-node-starter",
+  "version": "1.0.0",
+  "description": "QHO431 Week 4 - first steps with Node.js, before any templating or routing",
+  "type": "module",
+  "scripts": {
+    "hello": "node hello.js",
+    "plain-server": "node server-plain-node.mjs",
+    "express-preview": "node server-express.mjs"
+  },
+  "dependencies": {
+    "express": "^4.22.2"
+  }
+}

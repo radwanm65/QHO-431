@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML • CSS • JavaScript Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>HTML • CSS • JavaScript Demo</h1>
+      <button id="themeBtn">🌙 Dark Mode</button>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Counter</h2>
+        <p id="counter">0</p>
+        <button id="increase">Increase</button>
+        <button id="decrease">Decrease</button>
+        <button id="reset">Reset</button>
+      </section>
+
+      <section class="card">
+        <h2>Live Clock</h2>
+        <h3 id="clock"></h3>
+      </section>
+
+      <section class="card">
+        <h2>Background Colour</h2>
+
+        <input type="color" id="colourPicker" />
+
+        <p>Choose a colour to change the page background.</p>
+      </section>
+
+      <section class="card">
+        <h2>Simple Contact Form</h2>
+
+        <form id="contactForm">
+          <label>Name</label>
+          <input type="text" id="name" placeholder="Your name" />
+
+          <label>Email</label>
+          <input type="email" id="email" placeholder="example@email.com" />
+
+          <button type="submit">Submit</button>
+        </form>
+
+        <p id="message"></p>
+      </section>
+    </main>
+
+    <footer>HTML • CSS • JavaScript Demonstration</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

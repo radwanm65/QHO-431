@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>getElementById Demo</title>
+  </head>
+  <body>
+    <h1 id="title">Original Title</h1>
+
+    <button onclick="changeText()">Change Text</button>
+
+    <script>
+      function changeText() {
+        const element = document.getElementById("title");
+        element.textContent = "Text changed using getElementById";
+      }
+    </script>
+  </body>
+</html>
