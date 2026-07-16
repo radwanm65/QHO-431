@@ -1,0 +1,12 @@
+{
+  "name": "trailhead-explorer",
+  "version": "1.0.0",
+  "description": "QHO431 Week 5 teaching example - EJS templating combined with Express routing and Router()",
+  "type": "module",
+  "main": "index.mjs",
+  "scripts": { "start": "node index.mjs" },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  }
+}

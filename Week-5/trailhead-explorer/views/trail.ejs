@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+
+<article class="trail-detail">
+  <h1><%= trail.name %></h1>
+  <span class="badge badge-<%= trail.difficulty.toLowerCase() %>"><%= trail.difficulty %></span>
+  <p><%= trail.distanceKm %> km</p>
+  <p><%= trail.description %></p>
+
+  <!-- Not every trail has a "note" field - this conditional only
+       renders the warning box when one exists, instead of showing
+       an empty or "undefined" note for the others. -->
+  <% if (trail.note) { %>
+    <div class="note-box">
+      <strong>Note:</strong> <%= trail.note %>
+    </div>
+  <% } %>
+
+  <p><a href="/">&larr; Back to all trails</a></p>
+</article>
+
+<%- include('partials/footer') %>

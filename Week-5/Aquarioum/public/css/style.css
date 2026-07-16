@@ -1,0 +1,314 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 40px;
+  background: #f4f4f4;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background: steelblue;
+  color: white;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background: #1b4f72;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 50px;
+  background-color: #005b8f;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  margin-left: auto; /* pushes links to the right */
+  padding: 0;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links li a:hover {
+  color: #bdefff;
+}
+
+h1 {
+  color: steelblue;
+}
+
+footer {
+  margin-top: 40px;
+  color: gray;
+}
+
+/* Banner */
+
+.page-banner {
+  background: linear-gradient(135deg, #005b96, #00a6d6);
+  color: white;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.page-banner h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.page-banner p {
+  font-size: 1.2rem;
+}
+
+/* Layout */
+
+.contact-page {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+/* Form */
+
+.contact-form-container {
+  background: white;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container h2 {
+  color: #005b96;
+  margin-bottom: 10px;
+}
+
+.intro {
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 95%;
+  padding: 12px;
+  border: 1px solid #cfd8dc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #008cc8;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 140, 200, 0.3);
+}
+
+/* Checkbox */
+
+.checkbox-group {
+  display: flex;
+  gap: 12px;
+  margin: 25px 0;
+  align-items: flex-start;
+}
+
+.checkbox-group input {
+  width: auto;
+}
+
+/* Buttons */
+
+.button-group {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-primary {
+  background: #0077b6;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #005b96;
+}
+
+.btn-secondary {
+  background: #dddddd;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background: #c6c6c6;
+}
+
+/* Sidebar */
+
+.contact-information {
+  background: white;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+.contact-information h2 {
+  color: #005b96;
+  margin-bottom: 25px;
+}
+
+.info-box {
+  margin-bottom: 25px;
+}
+
+.info-box h3 {
+  color: #008cc8;
+  margin-bottom: 8px;
+}
+
+/* Validation */
+
+input:required:invalid,
+textarea:required:invalid,
+select:required:invalid {
+  border-color: #d62828;
+}
+
+input:required:valid,
+textarea:required:valid,
+select:required:valid {
+  border-color: #2a9d8f;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .contact-page {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .page-banner h1 {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .page-banner {
+    padding: 50px 15px;
+  }
+
+  .contact-form-container,
+  .contact-information {
+    padding: 25px;
+  }
+}
+/* FAQ Page */
+
+.faq-hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: #e8f7ff;
+}
+
+.faq-container {
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.faq-item {
+  background: white;
+  margin-bottom: 20px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h2 {
+  color: #005b8f;
+  font-size: 22px;
+}
+
+.faq-item p,
+.faq-item li {
+  line-height: 1.6;
+}
+
+.faq-contact {
+  text-align: center;
+  padding: 40px;
+  background: #005b8f;
+  color: white;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 15px;
+  background: white;
+  color: #005b8f;
+  text-decoration: none;
+  border-radius: 5px;
+}
