@@ -1,0 +1,16 @@
+<!-- views/home.ejs -->
+<%- include("partials/header", { title: "Home Page - Aquarium World" }) %>
+<%- include("partials/navigation") %>
+
+<h2>Aquarium Information</h2>
+
+<p>Name: <%= aquarioum.name %></p>
+<p>Location: <%= aquarioum.location %></p>
+<p>Address: <%= aquarioum.address %></p>
+<p>Email: <%= aquarioum.email %></p>
+<p>
+Current Server Time:
+<strong><%= new Date().toLocaleString() %></strong>
+</p>
+
+<%- include("partials/footer") %>
