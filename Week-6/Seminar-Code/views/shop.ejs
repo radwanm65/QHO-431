@@ -1,0 +1,10 @@
+<%- include("partials/header", { title: "Home Page - Shops World" }) %>
+<%- include("partials/navigation") %>
+
+<% if (reviews.length > 0) { %> <% reviews.forEach(review => { %> 
+    <p>Reviews Related to: <%= shop.name %></p>
+    <p><%= review.review_text %></p> 
+
+    <% }) %> <% } else { %> <p>No reviews yet.</p> <% } %>
+
+<%- include("partials/footer") %>
